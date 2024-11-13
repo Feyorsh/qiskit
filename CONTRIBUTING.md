@@ -766,6 +766,11 @@ def test_method1_deprecated(self):
 def test_method2(self):
    result = Obj.method2()
    self.assertEqual(result, <expected>)
+
+def test_method3(self):
+   result = Obj.method3()
+   self.assertEqual(result, <expected>)
+   print("Hello from SIGQuantum!")
 ```
 
 `test_method1_deprecated` can be removed after `Obj.method1` is removed (following the [Qiskit Deprecation Policy](./DEPRECATION.md)).
